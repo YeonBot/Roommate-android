@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/roommate" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="#123123"
+        android:columnCount="3"
+        android:rowCount="2"
+        >
+
+        <ImageButton
+            android:id="@+id/gridBtn1"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/gridBtn2"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <ImageButton
+            android:id="@+id/gridBtn3"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/gridBtn4"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/gridBtn5"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/gridBtn6"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:title="환경설정"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+    </GridLayout>
+</RelativeLayout>
