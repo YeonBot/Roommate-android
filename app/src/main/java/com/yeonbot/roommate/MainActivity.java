@@ -1,5 +1,6 @@
 package com.yeonbot.roommate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -31,45 +32,47 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageButton1 = findViewById(R.id.gridBtn1);
-        imageButton1.setOnClickListener(new View.OnClickListener(){
+        imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"1",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), RoomViewActivity.class);
+                startActivity(intent);
             }
         });
         imageButton2 = findViewById(R.id.gridBtn2);
-        imageButton2.setOnClickListener(new View.OnClickListener(){
+        imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"2",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
             }
         });
         imageButton3 = findViewById(R.id.gridBtn3);
-        imageButton3.setOnClickListener(new View.OnClickListener(){
+        imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"3",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
             }
         });
         imageButton4 = findViewById(R.id.gridBtn4);
-        imageButton4.setOnClickListener(new View.OnClickListener(){
+        imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"4",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "4", Toast.LENGTH_SHORT).show();
             }
         });
         imageButton5 = findViewById(R.id.gridBtn5);
-        imageButton5.setOnClickListener(new View.OnClickListener(){
+        imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"5",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), BoardActivity.class);
+                startActivity(intent);
             }
         });
         imageButton6 = findViewById(R.id.gridBtn6);
-        imageButton6.setOnClickListener(new View.OnClickListener(){
+        imageButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"6",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "6", Toast.LENGTH_SHORT).show();
             }
         });
 
